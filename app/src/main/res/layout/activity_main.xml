@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pp"
+        android:src="@drawable/pp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32dp"
+        android:text="Welcome to Pizza Zone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUserName"
+        android:hint="Enter User Name"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUserPassword"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="79dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:text="No.of incorrected attempts: "
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:text="or" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/g"
+            android:layout_marginLeft="88dp"/>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/f"
+            android:layout_marginLeft="44dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
